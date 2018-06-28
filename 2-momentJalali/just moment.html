@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+        <script src="./moment-jalaali/moment.js"></script>
+        <script src="moment-jalaali/build/moment-jalaali.js"></script>
+    </head>
+    <body>
+        <div id="displayMoment"></div>
+        <div id="displayJsDate"></div>
+
+        <script>
+           (function()
+                {
+                // instantiate a moment object
+                var NowMoment = moment();
+                
+                // instantiate a JavaScript Date object
+                var NowDate = new Date();
+                
+                // display value of moment object in #displayMoment div
+                var eDisplayMoment = document.getElementById('displayMoment');
+                eDisplayMoment.innerHTML = NowMoment;
+                
+                // display value of Date object in #displayJsDate div
+                var eDisplayDate = document.getElementById('displayJsDate');
+                eDisplayDate.innerHTML = NowDate;
+                })();
+        </script>    
+    </body>
+</html>
+
+
+
+
+
+

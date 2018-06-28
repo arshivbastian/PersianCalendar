@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta charset="UTF-8">
+        <script src="moment-jalaali/node_modules/moment/moment.js"></script>
+        <script src="moment-jalaali/node_modules/moment-jalaali/build/moment-jalaali.js"></script>
+</head>
+<body>
+    <div id="place"></div>
+
+    <script>
+        document.getElementById("place").innerHTML = moment().format('jYYYY/jM/jD');
+    </script>
+</body>
+</html>
