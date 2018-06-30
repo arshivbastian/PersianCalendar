@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+        <script src="moment-jalaali/moment.js"></script>
+        <!--need this extera JS-->
+        <script src="moment-jalaali/moment-timezone.min.js"></script>
+        <!--<script src="moment-jalaali/build/moment-jalaali.js"></script>-->
+    </head>
+    <body>
+        <div id="displayMoment"></div>
+
+        <script>
+           (function()
+                {
+                var m = moment();
+                m.tz('Asia/Tehran').format('ha z');  // 5am PDT
+
+                var d = document.getElementById('displayMoment');
+                d.innerHTML = m;
+                
+                })();
+        </script>    
+    </body>
+</html>
+
+
+
+
+
+
